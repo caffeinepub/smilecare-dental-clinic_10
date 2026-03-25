@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* SmileCare Dental Palette */
+    /* Background ice blue #EAF5FF */
+    --background: 0.965 0.015 220;
+    /* Foreground navy #0F2A3A */
+    --foreground: 0.22 0.045 222;
+    /* Card white */
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.045 222;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.045 222;
+    /* Primary green #6FB27A */
+    --primary: 0.68 0.1 148;
+    --primary-foreground: 1 0 0;
+    /* Secondary pale mint #EAF6E8 */
+    --secondary: 0.965 0.025 148;
+    --secondary-foreground: 0.22 0.045 222;
+    /* Muted */
+    --muted: 0.95 0.012 220;
+    --muted-foreground: 0.5 0.025 220;
+    /* Accent pale blue */
+    --accent: 0.94 0.025 220;
+    --accent-foreground: 0.22 0.045 222;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    /* Border #D6DEE6 */
+    --border: 0.88 0.015 220;
+    --input: 0.88 0.015 220;
+    --ring: 0.68 0.1 148;
+
+    /* Custom tokens */
+    --navy: 0.22 0.045 222;
+    --footer-bg: 0.195 0.048 228;
+    --footer-secondary: 0.78 0.022 220;
+    --mint-bg: 0.965 0.025 148;
+    --ice-bg: 0.965 0.015 220;
+    --green-badge: 0.95 0.04 148;
+    --blue-badge: 0.94 0.03 220;
+    --gold: 0.82 0.16 85;
+    --body-text: 0.4 0.025 220;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.22 0.045 222;
+    --sidebar-primary: 0.68 0.1 148;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.965 0.015 220;
+    --sidebar-accent-foreground: 0.22 0.045 222;
+    --sidebar-border: 0.88 0.015 220;
+    --sidebar-ring: 0.68 0.1 148;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    color: oklch(var(--navy));
+  }
+}
